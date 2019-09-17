@@ -15,3 +15,12 @@ Run locally:
 python -m SimpleHTTPServer 80 &
 testcafe chrome test.ts
 ```
+
+The problem is it seem that the following two expressions return the same thing when visiting the page in a browser:
+
+```js
+window.location.origin
+new Request('/').url
+```
+
+But the second one is something like `http://0.0.0.0:12345/8RWZTuU_s/https://bxt.github.io/testcafe-2140/` when run via testcafe.
