@@ -1,0 +1,15 @@
+<pre>loading...</pre>
+
+<script>
+
+var output = {
+  locationHref: window.location.href,
+  locationOrigin: window.location.origin,
+  rootRequestUrl: new Request('/').url,
+};
+
+var outputElement = document.getElementsByTagName('pre')[0];
+
+outputElement.firstChild.nodeValue = JSON.stringify(output, null, 4);
+
+</script>
