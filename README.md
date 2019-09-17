@@ -16,7 +16,7 @@ python -m SimpleHTTPServer 80 &
 testcafe chrome test.ts
 ```
 
-The problem is it seem that the following two expressions return the same thing when visiting the page in a browser:
+The problem is that the following two expressions return the same thing when visiting the page in a browser:
 
 ```js
 window.location.origin
